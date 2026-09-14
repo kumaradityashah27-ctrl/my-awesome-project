@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="icon" href="logo.png">
+    <title>Spotify - Web Player: Music for everyone</title>
+     <link rel="stylesheet" href="Spotify.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+   
+</head>
+<body>
+<div class="main">
+        <!-- Sidebar Navigation -->
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-option" style="opacity: 1;">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav-option">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+            
+            <div class="library">
+                <div class="option">
+                    <div class="lib-option nav-option">
+                        <img src="library_icon.png" alt="Library Icon">
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="lib-box">
+                    <div class="box">
+                        <p class="box-p1">Create your first playlist</p>
+                        <p class="box-p2">It's easy, we'll help you</p>
+                        <button class="badge">Create playlist</button>
+                    </div>
+                    <div class="box">
+                        <p class="box-p1">Let's find podcasts to follow!</p>
+                        <p class="box-p2">We'll keep you updated for new episodes</p>
+                        <button class="badge">Browse podcasts</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+   <div class="main_content">
+            <!-- Sticky Top Navigation Bar -->
+            <div class="sticky-nav">
+                <div class="sticky-nav-icons">
+                    <img src="backward_icon.png" alt="Back" class="nav-arrow">
+                    <img src="forward_icon.png" alt="Forward" class="nav-arrow hide">
+                </div>
+                <div class="sticky-nav-options">
+                    <button class="badge nav-item hide">Explore Premium</button>
+                    <button class="badge nav-item dark-badge"><i class="fa-regular fa-circle-down" style="margin-right: 5px;"></i>Install App</button>
+                    <i class="fa-regular fa-user nav-item user-icon"></i>
+                </div>
+            </div>
+
+            <!-- Content Cards Sections -->
+            <div class="content-section">
+                <h2>Recently Played</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="card1img.jpeg" class="card-img" alt="Top 50 Global">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">Your daily update of the most played tracks right now...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2>Trending Now</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="card2img.jpeg" class="card-img" alt="Mahiye Jinna Sohna">
+                        <p class="card-title">Mahiye Jinna Sohna</p>
+                        <p class="card-info">Darshan Raval</p>
+                    </div>
+                    <div class="card">
+                        <img src="card3img.jpeg" class="card-img" alt="Mere Paas Tum Ho">
+                        <p class="card-title">Mere Paas Tum Ho</p>
+                        <p class="card-info">Rahat Fateh Ali Khan</p>
+                    </div>
+                    <div class="card">
+                        <img src="card4img.jpeg" class="card-img" alt="Naa Ready">
+                        <p class="card-title">Naa Ready (From "Leo")</p>
+                        <p class="card-info">Anirudh Ravichander, Thalapathy Vijay</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2>Featured Charts</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="card1img.jpeg" class="card-img" alt="Top 50 Global">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">Your weekly mix of the biggest global hits.</p>
+                    </div>
+                    <div class="card">
+                        <img src="card5img.jpeg" class="card-img" alt="Top Songs Global">
+                        <p class="card-title">Top Songs - Global</p>
+                        <p class="card-info">The hottest tracks across the globe this week.</p>
+                    </div>
+                    <div class="card">
+                        <img src="card6img.jpeg" class="card-img" alt="Top Songs India">
+                        <p class="card-title">Top Songs - India</p>
+                        <p class="card-info">Catch up on the trending anthems in India.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer">
+                <div class="line"></div>
+            </div>
+        </div>
+
+        <!-- Music Bottom Playback Controller Bar -->
+        <div class="music-player">
+            <!-- Left: Current Track Details -->
+            <div class="album">
+                <img src="card2img.jpeg" alt="Current Song" class="album-art">
+                <div class="album-details">
+                    <a href="#" class="track-name">Mahiye Jinna Sohna</a>
+                    <a href="#" class="artist-name">Darshan Raval</a>
+                </div>
+                <i class="fa-regular fa-heart album-icon"></i>
+            </div>
+
+            <!-- Center: Playback Progress System -->
+            <div class="player">
+                <div class="player-controls">
+                    <img src="player_icon1.png" class="fa-solid fa-shuffle player-control-icon">
+                    <img src="player_icon2.png" class="fa-solid fa-shuffle player-control-icon">
+                    <img src="player_icon3.png" class="fa-solid fa-shuffle player-control-icon"style="opacity: 1; height: 1.75rem;">
+                    <img src="player_icon4.png" class="fa-solid fa-shuffle player-control-icon">
+                    <img src="player_icon5.png" class="fa-solid fa-shuffle player-control-icon"> 
+                    
+                </div>
+                <div class="playback-bar">
+                    <span class="curr-time">1:24</span>
+                    <input type="range" min="0" max="100" class="progress-bar" step="1">
+                    <span class="tot-time">3:42</span>
+                </div>
+            </div>
+
+            <!-- Right: Accessory Controls -->
+            <div class="controls">
+                <i class="fa-solid fa-microphone control-icon"></i>
+                <i class="fa-solid fa-bars control-icon"></i>
+                <i class="fa-solid fa-laptop-code control-icon"></i>
+                <div class="volume-box">
+                    <i class="fa-solid fa-volume-high control-icon"></i>
+                    <input type="range" min="0" max="100" class="volume-bar" step="1">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="Spotify.js"></script>
+</body>
+</html>
