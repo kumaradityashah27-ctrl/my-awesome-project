@@ -474,3 +474,20 @@ body {
 .volume-bar:hover::-webkit-slider-runnable-track {
     background-color: #1db954;
 }
+/* Mobile Responsive Overrides */
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column; /* Stacks the sidebar on top of the main content instead of side-by-side */
+    height: auto;
+  }
+
+  .sidebar {
+    width: 100% !important; /* Forces the sidebar to take full horizontal screen space */
+    height: auto;
+  }
+
+  .main-content {
+    width: 100% !important;
+    margin-left: 0;
+  }
+}
